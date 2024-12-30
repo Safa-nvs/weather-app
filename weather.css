@@ -1,0 +1,134 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+  }
+  
+  .mainDiv {
+  min-height: 100vh; 
+   width: 100%;
+    background: url('https://i.pinimg.com/736x/64/1b/c5/641bc5ffaa2ea4363a0484d2797bff77.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .centerDiv {
+    width: 360px; 
+    
+   height:auto;
+  
+    background: linear-gradient(135deg, #6e5b52, #d3a58f, #a67c6d);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-bottom: 30px;
+  }
+  
+  
+  .weathHead {
+    margin-right: 84%;
+    color: rgb(179, 176, 176);
+    margin-top: 70px!important;
+  }
+  
+  .citySearch {
+    height: 50px;
+    width: 360px;
+    background-image: url('https://i.pinimg.com/736x/d9/f4/f6/d9f4f6c905d9ef793e7667d5d393c2f2.jpg');
+    background-size: cover;
+    background-position: top center;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 10px;
+    font-size: 1.2rem;
+    outline: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 150px!important;
+  }
+  
+  .footerDiv {
+   
+    
+  
+  }
+  
+  .degree {
+    background-image: url('https://i.pinimg.com/736x/d9/f4/f6/d9f4f6c905d9ef793e7667d5d393c2f2.jpg') !important;
+    background-size: cover;
+    background-position: top bottom;
+    line-height: 0%;
+  }
+  
+  .cityDiv {
+    line-height: 0%;
+  }
+  
+  @media screen and (max-width: 320px) {
+    body, html {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .citySearch {
+      width: 100%!important;
+      height: 40px;
+      font-size: 0.9rem;
+      margin: 20px;
+    }
+  
+    .weathHead {
+      font-size: 1.5rem;
+      margin-right: 70%;
+     
+    }
+  
+    .mainDiv {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .citySec, .tempSec {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .citySec {
+      margin: 0 auto;
+      padding: 0;
+    }
+  
+    
+    .centerDiv {
+      width:100%;
+    
+      margin-left:20px!important;
+      margin-right: 20px!important;  
+    
+    }
+    .weathHead{
+      margin-left:40% !important;
+     font-size:40px!important;
+    }
+  }
+  
