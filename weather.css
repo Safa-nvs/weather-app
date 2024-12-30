@@ -10,8 +10,8 @@ body, html {
   }
   
   .mainDiv {
-    min-height: 100vh;
-    width: 100%;
+  min-height: 100vh; 
+   width: 100%;
     background: url('https://i.pinimg.com/736x/64/1b/c5/641bc5ffaa2ea4363a0484d2797bff77.jpg');
     background-size: cover;
     background-position: center;
@@ -21,9 +21,10 @@ body, html {
   }
   
   .centerDiv {
-    width: 450px; 
+    width: 360px; 
     
    height:auto;
+  
     background: linear-gradient(135deg, #6e5b52, #d3a58f, #a67c6d);
     border-radius: 15px;
     display: flex;
@@ -42,11 +43,12 @@ body, html {
   .weathHead {
     margin-right: 84%;
     color: rgb(179, 176, 176);
+    margin-top: 70px!important;
   }
   
   .citySearch {
     height: 50px;
-    width: 450px;
+    width: 360px;
     background-image: url('https://i.pinimg.com/736x/d9/f4/f6/d9f4f6c905d9ef793e7667d5d393c2f2.jpg');
     background-size: cover;
     background-position: top center;
@@ -57,9 +59,14 @@ body, html {
     font-size: 1.2rem;
     outline: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 150px!important;
   }
   
-  .footerDiv {}
+  .footerDiv {
+   
+    
+  
+  }
   
   .degree {
     background-image: url('https://i.pinimg.com/736x/d9/f4/f6/d9f4f6c905d9ef793e7667d5d393c2f2.jpg') !important;

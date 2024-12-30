@@ -26,31 +26,31 @@
 </head>
 
 <body>
-    <div class="conatiner d-flex flex-column align-items-center  mainDiv">
-        <span class="weathHead fs-2 fw-bold mt-3">WEATHER</span>
-        <input id="cityInput" onchange="countrySearch()" class="mt-2 citySearch fs-4" style="height: 70px;width: 450px;" type="search" placeholder="Enter city">           
+    <div class="conatiner d-flex flex-column align-items-center justify-content-center  mainDiv">
+      
+        <input id="cityInput" onchange="countrySearch()" class=" citySearch fs-4" style="height: 60px;width: 360px;" type="search" placeholder="Enter city">           
    
         <div d="invalidCity"></div>
         
         <div style="background-image: url('https://i.pinimg.com/736x/d9/f4/f6/d9f4f6c905d9ef793e7667d5d393c2f2.jpg');"
             class="mt-3 card shadow text-center centerDiv mb-5">
 
-            <div style="height: 250px; width:400px" class="cityDiv" id="citySec">
+            <div style="height: 250px; width:360px" class="cityDiv" id="citySec">
 
 
 
             </div>
-            <div style="font-family: Afacad Flux serif;" class="d-flex align-items-center justify-content-center flex-column footerDiv" id="tempSec">
-                <div style="height: 90px; width:400px " class="card shadow degree mb-4 d-flex">
+            <div style="font-family: Afacad Flux serif;margin-top: -40px;" class="d-flex align-items-center justify-content-center flex-column footerDiv" id="tempSec">
+                <div style="height: 90px; width:360px " class="card shadow degree mb-4 d-flex">
                     <h3 class="text-light"> <i class="fa-solid fa-globe fa-sm me-2" style="color: white;"></i>humidity
                     </h3><br>
 
                 </div>
-                <div style="height: 90px; width:400px " class="card shadow degree mb-4">
+                <div style="height: 90px; width:360px " class="card shadow degree mb-4">
                     <h3 class="text-light"> <i class="fas fa-wind fa-sm me-2" style="color: white;"></i>wind</h3>
 
                 </div>
-                <div style="height: 90px; width:400px " class="card shadow degree mb-2">
+                <div style="height: 90px; width:360px " class="card shadow degree mb-2">
                     <h3 class="text-light"> <i class="fa-solid fa-temperature-arrow-up fa-sm me-2"
                             style="color: white;"></i>feels like</h3>
 
@@ -106,7 +106,7 @@
                 
                     const weatherIcon = `https://openweathermap.org/img/wn/${displayData.weather[0].icon}@2x.png`;
 
-                    citySec.innerHTML = `
+                    citySec.innerHTML = `<div style="height: auto; width:360px" class="cityDiv" id="citySec">
                     <h1 style=" font-size:50px ;color: rgb(232, 129, 65);" class="text-center  fw-bold">${displayData.name}</h1>
                     <h5   style="font-family: Afacad Flux, serif" class="text-light fw-bold">${hours}:${minutes}:${seconds}:${session} . ${month}/${day}/${year}</h5>;
                     <h1 style="font-size: 60px;" class="text-light">${tempCelcius.toFixed(1)}<sup>o</sup>C
@@ -117,15 +117,15 @@
                     // Update other sections (temperature, humidity, etc.)
                     const tempSec = document.getElementById('tempSec');
                     tempSec.innerHTML = `
-                    <div style="height: 90px; width:400px" class="card shadow degree mb-4 ">
+                    <div style="height: 90px; width:360px;margin-top: 40px;" class="card shadow degree mb-4 ">
                         <h3 class="text-light"> <i class="fa-solid fa-globe fa-sm me-2" style="color: white;"></i>Humidity</h3><br>
                         <h5 class="text-light fw-bold"> ${displayData.main.humidity}%</h5>
                     </div>
-                    <div style="height: 90px; width:400px" class="card shadow degree mb-4">
+                    <div style="height: 90px; width:360px " class="card shadow degree mb-4">
                         <h3 class="text-light"> <i class="fas fa-wind fa-sm me-2" style="color: white;"></i>Wind</h3><br>
                         <h5 class="text-light fw-bold">${displayData.wind.speed}%</h5>
                     </div>
-                    <div style="height: 90px; width:400px" class="card shadow degree mb-5">
+                    <div style="height: 90px; width:360px " class="card shadow degree mb-3">
                         <h3 class="text-light"> <i class="fa-solid fa-temperature-arrow-up fa-sm me-2" style="color: white;"></i>feels like</h3><br>
                         <h5 class="text-light fw-bold">${tempFeelsCelcius.toFixed(1)}°C</h5>
 
