@@ -76,7 +76,7 @@ function View(addVideoResponse) {
 
        ):(
         <div className=' ms-5 d-flex align-items-center justify-content-center flex-column'>
-           <h3 className='text-danger '>Nothing to display</h3>
+           <h3 className='text-danger '>Nothing to display!</h3>
           <img style={{height:'500px',weight:'600px'}} src='/nothing-image.png'></img>
          
         </div>
